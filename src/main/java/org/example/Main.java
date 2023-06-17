@@ -1,19 +1,48 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        File fichero = new File("C:\\Users\\hugoc\\Desktop\\Contraseña.txt");
+        int longitud = introNum();
+        BufferedWriter br = null;
+        String contrasena = password(longitud);
+        try {
+            br = new BufferedWriter(new FileWriter(fichero));
+            br.write(contrasena);
+            br.write(System.lineSeparator());
+        } catch (IOException ex) {
+            System.err.println(ex.toString());
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException ex) {
+                    System.out.println("Error al cerrar");
+                }
+            }
         }
+        System.out.println("Contraseña creada en el escritorio");
     }
+
+    public static String password(int num) {
+        String cadena = "";
+        String caracteres = "qQwWeErRtTyYuUiIoOpPaAsSdDfFgGhHjJkKlLzZxXcCvVbBnNmM1234567890!|#~%&¬/()='?¡¿^+*-_<>";
+        for (int i = 0; i < num; i++) {
+            int randomCara = (int) (Math.random() * caracteres.length() - 1 + 1);
+            cadena += caracteres.charAt(randomCara);
+        }
+        return cadena;
+    }
+
+    public static int introNum() {
+        System.out.println("Introduce la logitud de la contraseña que quieres generar:");
+        int num = new Scanner(System.in).nextInt();
+        return num;
+    }
+
 }
