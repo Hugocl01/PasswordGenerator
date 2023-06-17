@@ -41,8 +41,7 @@ public class Main {
 
     public static int introNum() {
         System.out.println("Introduce la logitud de la contraseña que quieres generar:");
-        int num = new Scanner(System.in).nextInt();
-        return num;
+        return new Scanner(System.in).nextInt();
     }
 
 }
