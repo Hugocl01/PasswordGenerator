@@ -1,6 +1,6 @@
-# PasswordGenerator
+# Password Generator
 <p align="center">
-  <img src="Web/logo.png" width="40%">
+  <img src="Web/logo.png" width="50%">
 </p>
 
 <br>
