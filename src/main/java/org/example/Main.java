@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Statics.passwordLength());
+        int opc = Statics.opcMenu();
+        int passwordLength = Statics.passwordLength();
 
     }
 
