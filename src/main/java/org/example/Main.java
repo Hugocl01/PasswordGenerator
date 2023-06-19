@@ -1,28 +1,36 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Alphabet characters = null;
-        int opc = Statics.opcMenu();
-        switch (opc) {
-            case 1 -> {
-                characters = new Alphabet(true, false);
+        int opc = 0;
+        boolean onlyLetters = false;
+        boolean symbolsNumbers = false;
+        do {
+            opc = Statics.opcMenu();
+            switch (opc) {
+                case 1 -> {
+                    onlyLetters = true;
+                    symbolsNumbers = false;
+                }
+                case 2 -> {
+                    onlyLetters = false;
+                    symbolsNumbers = true;
+                }
+                case 3 -> {
+                    onlyLetters = true;
+                    symbolsNumbers = true;
+                }
+                case 4 -> {
+                    System.out.println("You have exited the program");
+                }
             }
-            case 2 -> {
-                characters = new Alphabet(false, true);
+            if (opc != 4) {
+                Alphabet characters = new Alphabet(onlyLetters, symbolsNumbers);
+                String backlog = characters.getCharacters();
+                Password password = new Password(backlog, Statics.passwordLength());
+                System.out.println(password.getPassword());
             }
-            case 3 -> {
-                characters = new Alphabet(true, true);
-            }
-            case 4 -> {
-                System.out.println("You have exited the program");
-            }
-        }
-        String backlog = characters.getCharacters();
-        Password password = new Password(backlog, Statics.passwordLength());
+        } while (opc != 4);
 
     }
-
 }
