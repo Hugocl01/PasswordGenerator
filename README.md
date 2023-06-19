@@ -1,4 +1,7 @@
 # PasswordGenerator
+<p align="center">
+  <img src="Web/logo.jpg" width="40%">
+</p>
 
 This is an application to generate random passwords
 
