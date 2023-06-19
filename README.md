@@ -5,7 +5,7 @@
 
 <br>
 
-this application that allows you to generate secure and personalized passwords, randomly.
+This application that allows you to generate secure and personalized passwords, randomly.
 
 ## Functionalities:
 
