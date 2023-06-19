@@ -16,20 +16,6 @@ public class Statics {
             System.out.println("Select an option please ->");
             try {
                 opc = new Scanner(System.in).nextInt();
-                switch (opc) {
-                    case 1 -> {
-                        Alphabet a = new Alphabet(true, false);
-                    }
-                    case 2 -> {
-                        Alphabet a = new Alphabet(false, true);
-                    }
-                    case 3 -> {
-                        Alphabet a = new Alphabet(true, true);
-                    }
-                    case 4 -> {
-                        System.out.println("You have exited the program");
-                    }
-                }
                 if (opc < 1 || opc > 4) {
                     throw new Exception("The number entered is not among the options, please choose a valid option again");
                 }
@@ -38,7 +24,7 @@ public class Statics {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-        } while (opc < 1 || opc > 3);
+        } while (opc < 1 || opc > 4);
         return opc;
     }
 
