@@ -14,4 +14,6 @@ Functionalities:
 
 <br>
 
+## About
+
 This is a project with the aim of experimenting and learning, suggestions are appreciated.
