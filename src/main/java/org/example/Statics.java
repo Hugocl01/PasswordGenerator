@@ -11,11 +11,26 @@ public class Statics {
             System.out.println("**** Menu ****");
             System.out.println("1- Password with uppercase and lowercase letters");
             System.out.println("2- Password with numbers and symbols");
-            System.out.println("3- Go out");
+            System.out.println("3- Full password");
+            System.out.println("4- Go out");
             System.out.println("Select an option please ->");
             try {
                 opc = new Scanner(System.in).nextInt();
-                if (opc < 1 || opc > 3) {
+                switch (opc) {
+                    case 1 -> {
+                        Alphabet a = new Alphabet(true, false);
+                    }
+                    case 2 -> {
+                        Alphabet a = new Alphabet(false, true);
+                    }
+                    case 3 -> {
+                        Alphabet a = new Alphabet(true, true);
+                    }
+                    case 4 -> {
+                        System.out.println("You have exited the program");
+                    }
+                }
+                if (opc < 1 || opc > 4) {
                     throw new Exception("The number entered is not among the options, please choose a valid option again");
                 }
             } catch (InputMismatchException ime) {
@@ -27,7 +42,7 @@ public class Statics {
         return opc;
     }
 
-    public static int passwordLength(){
+    public static int passwordLength() {
         int num = 0;
         boolean goOut = false;
         do {
