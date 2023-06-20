@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
@@ -66,15 +66,30 @@ body {
     width: 100%;
     background-color: #333333;
     color: white;
-    text-align:left;
+    text-align: left;
 }
 
-.content {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.footer-content {
+    clear:both;
+ float:left;
+ overflow:hidden;
+ width:100%;
 }
 
 .footer a {
     color: white;
     text-decoration: none;
+}
+
+.list {
+    margin: -25px 0 0 -25px; 
+    text-align: left;
+    display: inline-block;
+}
+
+.list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
