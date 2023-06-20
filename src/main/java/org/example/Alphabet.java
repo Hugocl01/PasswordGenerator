@@ -5,7 +5,7 @@ public class Alphabet {
     public final String upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public final String lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
     public final String numbers = "1234567890";
-    public final String symbols = "!@#$%^&*()-_=+\\\\/~?";
+    public final String symbols = "!@#$%^&*()-_=+\\\\a/~?";
 
     public StringBuilder characters;
 
