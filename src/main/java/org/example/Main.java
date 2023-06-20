@@ -28,7 +28,7 @@ public class Main {
                 Alphabet characters = new Alphabet(onlyLetters, symbolsNumbers);
                 String backlog = characters.getCharacters();
                 Password password = new Password(backlog, Statics.passwordLength());
-                System.out.println(password.getPassword());
+                System.out.println("Your password:\n" + password.getPassword() + "\n");
             }
         } while (opc != 4);
 
