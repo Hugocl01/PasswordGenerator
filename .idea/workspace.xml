@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5197f4b-8b76-4860-9a88-d2dda253376d" name="Changes" comment="Cambios en el README.md">
+    <list default="true" id="c5197f4b-8b76-4860-9a88-d2dda253376d" name="Changes" comment="Cambios en la pagina">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/principal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Web/principal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Web/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687219170822</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Cambios en la pagina">
+      <option name="closed" value="true" />
+      <created>1687259068749</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687259068749</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +196,7 @@
     <MESSAGE value="Cambios  el README.md" />
     <MESSAGE value="Cambios en la estructura de la aplicacion" />
     <MESSAGE value="Cambios en el README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios en el README.md" />
+    <MESSAGE value="Cambios en la pagina" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en la pagina" />
   </component>
 </project>

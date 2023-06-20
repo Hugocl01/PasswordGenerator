@@ -3,8 +3,6 @@
   <img src="Web/logo.png" width="50%">
 </p>
 
-<br>
-
 This application that allows you to generate secure and personalized passwords, randomly.
 
 ## Functionalities:
