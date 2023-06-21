@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #f0f0f0;
+    background-color: #dddddd;
     overflow: auto;
 }
 
@@ -15,12 +15,6 @@ body {
     font-weight: bold;
     text-align: center;
     color: #000000;
-}
-
-.subtitle {
-    font-size: 24px;
-    text-align: center;
-    color: #2b2b2b;
 }
 
 .content {
@@ -41,17 +35,19 @@ body {
     background-color: #ff9900;
     border: none;
     border-radius: 25px;
+    box-shadow: 0 0 10px #ff9900;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
 
 .button:hover {
     background-color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00;
     transform: scale(1.1);
-    color: #000000;
+    color: black;
 }
 
 .box {
@@ -63,31 +59,34 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.subtitle {
+    font-size: 24px;
+    text-align: center;
+    color: #2b2b2b;
+}
+
 .footer {
     width: 100%;
     background-color: #333333;
-    color: white;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
 }
 
-.footer-content {
-    clear: both;
-    float: left;
-    overflow: hidden;
-    width: 100%;
-}
-
 .footer ul {
     list-style: none;
+    padding-right: 32px;
 }
 
-footer li {
+.footer li {
     padding: 5px;
 }
 
 .footer a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 
 }
