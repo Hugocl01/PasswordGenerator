@@ -24,6 +24,12 @@ body {
     color: #4d4c4c;
 }
 
+.content{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+
 .imagenes {
     width: 120px;
 }
@@ -40,7 +46,6 @@ body {
     font-weight: bold;
     color: white;
     cursor: pointer;
-    /* Added this line to create the transition */
     transition: all 0.5s ease-in-out;
 }
 
