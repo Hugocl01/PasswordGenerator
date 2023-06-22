@@ -4,6 +4,13 @@
     overflow: auto;
 }
 
+/*
+body {
+    margin: 0%;
+    padding: 0%;
+}
+*/
+
 .logo {
     width: 300px;
     display: block;
@@ -15,6 +22,15 @@
     font-weight: bold;
     text-align: center;
     color: var(--color-tittle);
+}
+
+i {
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    transform: translate(-50%, -50%);
 }
 
 .content {
