@@ -1,6 +1,6 @@
 # Password Generator
 <p align="center">
-  <img src="Web/logo.png" width="50%">
+  <img src="/Web/imagenes/logo.png" width="50%">
 </p>
 
 This application that allows you to generate secure and personalized passwords, randomly.
