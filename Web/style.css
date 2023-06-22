@@ -10,6 +10,9 @@ body {
     padding: 0%;
 }
 */
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
 
 .logo {
     width: 300px;
@@ -24,12 +27,11 @@ body {
     color: var(--color-tittle);
 }
 
+
 i {
     font-size: 40px;
     cursor: pointer;
     position: absolute;
-    top: 35%;
-    right: 0%;
     transform: translate(-50%, -50%);
 }
 
