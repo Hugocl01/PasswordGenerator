@@ -10,11 +10,17 @@
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body">
     <header>
         <img src="logo.png" alt="Password Generator Logo" class="logo">
         <h1 class="title">Password Generator</h1>
     </header>
+
+    <label id="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+
     <div class="content">
         <div class="box">
             <h2 class="subtitle">La aplicación que te permite generar contraseñas seguras y personalizadas.</h2>
@@ -41,43 +47,34 @@
                 especiales. Estas combinaciones se pueden ajustar para adaptarse a los requisitos de contraseña únicos
                 de diferentes sitios.</p>
         </div>
+
         <div class="box">
-            <h2 class="subtitle">Seguridad</h2>
-            <div>
-                <h3 class="subtitle">1) Use una contraseña diferente para cada sitio</h3>
-                <p>Reutilizar la misma contraseña es muy arriesgado. Si un pirata informático puede averiguar su
-                    contraseña
-                    para una cuenta, muy bien podría acceder a todas sus cuentas que comparten esa contraseña.
-                    Para aumentar su seguridad, es importante generar contraseñas aleatorias para cada sitio.
-                    El generador de contraseñas integrado de RoboForm le permite generar rápidamente contraseñas dentro
-                    de su navegador o aplicaciones móviles, asegurando que sean únicas para cada sitio. De hecho, en una
-                    reciente auditoría independiente realizada por un tercero, el generador de contraseñas web de
-                    RoboForm obtuvo
-                    la puntuación más alta de todos los administradores de contraseñas conocidos</p>
-                <h3 class="subtitle">2) Use un generador de contraseñas para crear contraseñas seguras</h3>
-                <p>Las contraseñas seguras son complejas, imposibles de adivinar, tienen al menos 16 caracteres y no
-                    incluyen palabras de diccionario, sustituciones de símbolos comunes (@ por 'a') ni información de
-                    identificación personal, como cumpleaños y nombres de mascotas, amigos y familiares. . El Centro de
-                    seguridad de RoboForm evalúa las contraseñas que se adhieren correctamente a estas directrices como
-                    "Fuertes".</p>
-                <h3 class="subtitle">3) Guarde sus contraseñas en un administrador de contraseñas</h3>
-                <p>Libere su memoria y mantenga seguras sus contraseñas complejas almacenándolas en RoboForm</p>
-                <h3 class="subtitle">4) Verifique la seguridad de sus contraseñas</h3>
-                <p>Dentro de RoboForm, visite el Centro de seguridad para identificar la seguridad de sus contraseñas
-                    existentes. También puede verificar la seguridad de las contraseñas que aún no están almacenadas en
-                    RoboForm utilizando nuestro ¿Qué tan segura es mi contraseña? página.</p>
-                <h3 class="subtitle">5) Actualice sus contraseñas cuando sea necesario</h3>
-                <p>Siempre actualice su contraseña si tiene alguna razón para creer que ha sido comprometida o expuesta;
-                    especialmente después de cualquier notificación de una violación del sitio o una posible violación.
-                    Asegúrese de actualizar también las contraseñas que el Centro de seguridad de RoboForm no califique
-                    actualmente como "Fuerte".</p>
-                <button class="button">Descargar ahora</button>
-                <img src="escudo.png" alt="Escudo" class="imagenes">
-                <img src="engranajes.png" alt="Escudo" class="imagenes">
-                <img src="productividad.png" alt="Escudo" class="imagenes">
-            </div>
+            <h2 class="subtitle">Consejos para mejorar su seguridad</h2>
+            <h3 class="subtitle">1) Use una contraseña diferente para cada sitio</h3>
+            <p>Reutilizar la misma contraseña es muy arriesgado. Si un pirata informático puede averiguar su
+                contraseña
+                para una cuenta, muy bien podría acceder a todas sus cuentas que comparten esa contraseña.
+                Para aumentar su seguridad, es importante generar contraseñas aleatorias para cada sitio.
+                El generador de contraseñas te permite generar rápidamente contraseñas dentro
+                de su navegador o aplicaciones móviles, asegurando que sean únicas para cada sitio.</p>
+            <h3 class="subtitle">2) Use un generador de contraseñas para crear contraseñas seguras</h3>
+            <p>Las contraseñas seguras son complejas, imposibles de adivinar, tienen al menos 16 caracteres y no
+                incluyen palabras de diccionario, sustituciones de símbolos comunes (@ por 'a') ni información de
+                identificación personal, como cumpleaños y nombres de mascotas, amigos y familiares.</p>
+            <h3 class="subtitle">3) Guarde sus contraseñas en un administrador de contraseñas</h3>
+            <p>Libere su memoria y mantenga seguras sus contraseñas complejas almacenándolas con nuestro almacenador
+                de contraseñas.</p>
+            <h3 class="subtitle">4) Actualice sus contraseñas cuando sea necesario</h3>
+            <p>Siempre actualice su contraseña si tiene alguna razón para creer que ha sido comprometida o expuesta,
+                especialmente después de cualquier notificación de una violación del sitio o una posible violación.
+            </p>
+            <button class="button">Descargar ahora</button>
+            <img src="escudo.png" alt="Escudo" class="imagenes">
+            <img src="engranajes.png" alt="Escudo" class="imagenes">
+            <img src="productividad.png" alt="Escudo" class="imagenes">
         </div>
     </div>
+
     <footer class="footer">
         <ul>
             <li><a href="#">Inicio</a></li>
@@ -88,6 +85,18 @@
         <p>¿Necesitas ayuda? Contacta con nosotros en <a
                 href="mailto:passwordgenerator@gmail.com">passwordgenerator@gmail.com</a></p>
     </footer>
+
+    <script>
+        const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+        function cambiaTema(ev) {
+            if (ev.target.checked) {
+                document.documentElement.setAttribute('tema', 'dark');
+            } else {
+                document.documentElement.setAttribute('tema', 'light');
+            }
+        }
+        colorSwitch.addEventListener('change', cambiaTema);
+    </script>
 </body>
 
 </html>
