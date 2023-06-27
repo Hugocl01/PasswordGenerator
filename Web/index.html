@@ -2,18 +2,12 @@
 <html lang="es">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content="Password Generator Web">
-    <meta name="author" content="Hugo">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
     <link rel="stylesheet" href="/Web/css/main.css">
-
     <link rel="shortcut icon" href="/Web/imagenes/logo.png" />
     <title>Password Generator</title>
 </head>
@@ -49,8 +43,8 @@
         </nav>
     </header>
 
-    <div class="p-3  mb-2 mx-5 bg-light text-black" style="margin-top: 90px;">
-        <div id="Inicio" class="p-3 mb-4 text-black border rounded">
+    <div class="p-3 mb-2 mx-5 bg-light text-black">
+        <div id="Inicio" class="container p-3 mb-4 text-black border rounded">
             <h2 class="subtitle">La aplicación que te permite generar contraseñas seguras y personalizadas.</h2>
             <p>¿Estás cansado de usar las mismas contraseñas débiles y fáciles de adivinar? ¿Quieres proteger tus
                 cuentas y datos personales de los hackers y los ciberataques? ¿Te gustaría tener una herramienta que te
@@ -66,14 +60,15 @@
             </p>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button class="btn btn-primary me-md-2" type="button">Descargar ahora</button>
-                <button class="btn btn-primary" type="button">Descargar ahora</button>
+                <button class="btn btn-primary" type="button"><a download="PasswordGenerator" class="text-white"
+                        href="https://github.com/Hugocl01/PasswordGenerator/archive/refs/heads/master.zip">Descargar
+                        ahora</a></button>
             </div>
 
             <img src="/Web/imagenes/engranajes.png" class="mx-auto d-block" alt="engranajes" width="200" height="200">
         </div>
 
-        <div id="Como_Funciona" class="p-3 mb-4 text-black border rounded">
+        <div id="Como_Funciona" class="container p-3 mb-4 text-black border rounded">
             <h2 class="subtitle">¿Para que sirve un generador de contraseñas?</h2>
             <p>Un generador de contraseñas aleatorias es una herramienta que lo libera de tener que crear constantemente
                 contraseñas únicas para cada uno de sus sitios. Funciona generando automáticamente contraseñas seguras y
@@ -84,7 +79,7 @@
                 height="200">
         </div>
 
-        <div id="Seguridad" class="p-3 mb-4 text-black border rounded">
+        <div id="Seguridad" class="container p-3 mb-4 text-black border rounded">
             <h2 class="subtitle">Consejos para mejorar su seguridad</h2>
             <h3 class="subtitle">1) Use una contraseña diferente para cada sitio</h3>
             <p>Reutilizar la misma contraseña es muy arriesgado. Si un pirata informático puede averiguar su
@@ -102,35 +97,36 @@
                 de contraseñas.</p>
             <h3 class="subtitle">4) Actualice sus contraseñas cuando sea necesario</h3>
             <p>Siempre actualice su contraseña si tiene alguna razón para creer que ha sido comprometida o expuesta,
-                especialmente después de cualquier notificación de una violación del sitio o una posible violación.
+                especialmente después de cualquier notificación de una violación del sitio.
             </p>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button class="btn btn-primary me-md-2" type="button">Descargar ahora</button>
-                <button class="btn btn-primary" type="button">Descargar ahora</button>
+                <button class="btn btn-primary" type="button"><a download="PasswordGenerator" class="text-white"
+                        href="https://github.com/Hugocl01/PasswordGenerator/archive/refs/heads/master.zip">Descargar
+                        ahora</a></button>
             </div>
 
             <img src="/Web/imagenes/escudo.png" class="mx-auto d-block" alt="escudo" width="200" height="200">
         </div>
     </div>
 
-    <footer class="bg-secondary text-center text-white">
+    <footer class="bg-secondary text-center text-black">
         <div class="container p-4">
             <section class="">
                 <div class="row">
                     <div class="col-lg-12 col-md-6 mb-4 mb-md-0">
                         <ul class="list-unstyled mb-0" style="padding-right: 40px;">
                             <li>
-                                <a href="#Inicio" class="text-white">Inicio</a>
+                                <a href="#Inicio" class="text-black">Inicio</a>
                             </li>
                             <li>
-                                <a href="#Descargar" class="text-white">Descargar</a>
+                                <a href="#Descargar" class="text-black">Descargar</a>
                             </li>
                             <li>
-                                <a href="#Como_Funciona" class="text-white">Como funciona</a>
+                                <a href="#Como_Funciona" class="text-black">Como funciona</a>
                             </li>
                             <li>
-                                <a href="#Seguridad" class="text-white">Seguridad</a>
+                                <a href="#Seguridad" class="text-black">Seguridad</a>
                             </li>
                         </ul>
                     </div>
@@ -138,7 +134,7 @@
             </section>
 
             <section class="mt-4">
-                <p>¿Necesitas ayuda? Contacta con nosotros en <a class="text-white"
+                <p>¿Necesitas ayuda? Contacta con nosotros en <a class="text-black"
                         href="mailto:passwordgenerator@gmail.com">passwordgenerator@gmail.com</a>
                 </p>
             </section>
@@ -146,11 +142,10 @@
 
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2023 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <a class="text-black" href="https://getbootstrap.com/">Bootstrap.com</a>
         </div>
     </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
         </script>
